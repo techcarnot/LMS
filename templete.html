@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: #15202B;">
+    <style>
+        body{margin:0;padding:0px}
+        *::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: inset 0 0 0 10px;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-color: rgba(255, 0, 0, 0);
+    background-color: #38434e;
+}
+
+
+element.style {
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: 2px;
+    --bs-nav-tabs-border-color: #dee2e6b3;
+    --bs-nav-tabs-border-radius: 0.375rem;
+    --bs-nav-tabs-link-hover-border-color: #347ec700;
+    --bs-nav-tabs-link-active-color: #cbdae9e8;
+    --bs-nav-tabs-link-active-bg: #1e2732;
+    --bs-nav-tabs-link-active-border-color: #dee2e600 #dee2e600 #a2a9ae;
+    border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #c6cfdd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+
+    </style>
+
+
+<div class="container-fluid">
+
+  <div class="row" >
+    <div class="col-2 p-3 text-white" style="overflow-y: scroll;height: 100vh;background-color: #1E2732;  
+        
+        border-radius: 0 30px 30px 0;
+        padding: 20px;
+    ">
+      <ul class="nav nav-pills flex-column" role="tablist">
+
+     <li class="nav-item" style="padding:8px">
+        <center>
+<img src="logo.png" width="100%" alt=""> 
+</center>
+
+
+</li>
+      
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+    </div>
+    <div class="col p-3 text-white">
+    
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+<!-- .................................................................................................................................................................. -->
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#code_1"><img style="padding-right:9px" src="icon/2.png" width="35px" alt="">Code & Simulation</a>
+      <!-- change href -->
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#slide_1"><img style="padding-right:9px" src="icon/10.png" width="35px" alt="">Slide</a> <!-- change href -->
+  </li>
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img style="padding-right:9px" src="icon/4.png" width="35px" alt="">Videos</a>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" data-bs-toggle="tab" href="#videoEn_1"> <img style="padding-right:9px" src="icon/6.png" width="35px" alt="">Video in
+                  English</a></li> <!-- change href -->
+          <li><a class="dropdown-item" data-bs-toggle="tab" href="#videoUr_1"> <img style="padding-right:9px" src="icon/6.png" width="35px" alt="">Video in
+                  Urdu/hindi</a></li> <!-- change href -->
+      </ul>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#pquestion_1"><img style="padding-right:9px" src="icon/7.png" width="35px" alt="">Practice Question</a>
+      <!-- change href -->
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#doubt_1"><img style="padding-right:9px" src="icon/8.png" width="35px" alt="">Submit Doubt</a>
+      <!-- change href -->
+  </li>
+</ul>
+
+<!-- Tab panes Start -->
+<div class="tab-content">
+
+  <div id="code_1" class="container tab-pane active"><br> <!-- change href -->
+
+
+      <!-- Nav pills -->
+      <ul class="nav nav-pills nav-justified" role="tablist"
+          style="z-index: 10;position: relative;">
+          <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#code_1_1"><img style="padding-right:9px;" src="icon/12.png" width="35px" alt="">Single line
+                  print</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#code_1_2"><img style="padding-right:9px" src="icon/12.png" width="35px" alt="">Multiple line
+                  print</a>
+          </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div id="code_1_1" class="container tab-pane active"><br>
+              <div class="pizaset">.</div>
+              <iframe style="margin-bottom:-65px;margin-top: -21px;"
+                  src="https://paiza.io/projects/e/yW_CZ0aBMp-y4qUi83FX6A?theme=tomorrow_night_blue"
+                  width="100%" height="600" scrolling="no" seamless="seamless"></iframe>
+          </div>
+          <div id="code_1_2" class="container tab-pane fade"><br>
+              <div class="pizaset">.</div>
+              <iframe style="margin-bottom:-65px; margin-top: -21px;"
+                  src="https://paiza.io/projects/e/T6rYIj5n3ErdRm0uQmkD7w?theme=tomorrow_night_blue"
+                  width="100%" height="600" scrolling="no" seamless="seamless"></iframe>
+          </div>
+
+      </div>
+
+
+
+
+
+  </div>
+
+  <div id="slide_1" class="container tab-pane fade"><br> <!-- change href -->
+      <!-- <h3>Slide</h3> -->
+      <p style="text-align:center"><iframe class="slides" frameborder="0" height="540"
+              scrolling="no"
+              src="https://docs.google.com/presentation/d/e/2PACX-1vQMAH2IJXsBTJ3vnT5T1SzufK8xiDRI9ulHcIxkCei1fq3_fnAnVbYEFO3lJM7fbg/embed?start=false&loop=true&delayms=3000"
+              width="100%"></iframe><img alt="Tech-carnot-cover"
+              src="https://i.ibb.co/tLTPdRW/122.png"
+              style="float: right;height: 30px;margin-top: -36px;opacity: 0.999;width: 157px;" />
+      </p>
+  </div>
+  <div id="videoEn_1" class="container tab-pane fade"><br> <!-- change href -->
+      <h3>videoEn</h3>
+  </div>
+  <div id="videoUr_1" class="container tab-pane fade"><br> <!-- change href -->
+      <h3>videoUr</h3>
+  </div>
+  <div id="pquestion_1" class="container tab-pane fade"><br> <!-- change href -->
+
+
+      <!-- Nav pills -->
+      <ul class="nav nav-pills nav-justified" role="tablist"
+          style="z-index: 10;position: relative;">
+          <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#Q_code_1_1"> Print your
+                  Bio Data using Single line
+                  Print</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#Q_code_1_2"> create tabe
+                  structure Multiple line
+                  print</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" style="background-color: #c0dcd7;font-weight:700"
+                  data-bs-toggle="pill" href="#Q_code_1_3"> Code Editor
+              </a>
+          </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div id="Q_code_1_1" class="container tab-pane active"><br>
+              <div style="background-color: #03212e;">
+                  <span
+                      style="color:antiquewhite;font-weight: 600;padding:10px;font-size:20px">Question</span>
+                  <p style="color:antiquewhite;font-weight: 400;padding:10px;">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus,
+                      Explicabo aspernatur ad culpa qui nisi sunt tempore rerum dolorum odit
+                      iusto
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus,
+                      Explicabo aspernatur ad culpa qui nisi sunt tempore rerum dolorum odit
+                      iusto
+                  </p>
+                  <center>
+                      <img width="72%"
+                          src="https://bnz07pap001files.storage.live.com/y4mxRPrcGHZs1HGpUd26pYRKXt6aHpYSA9a-jBcOIFTZBT9-bh4dBiViJFzGc6j6TjQ99lZ3LqsCTPVoXMUegoE9360Gtr0tTTFphTwsuOER6sz2aRRnwHvurKyki2oNgpC6JF8vW_Vl-4E9v9iNENWvJPpyCBlcWj5n9Jt4lrZ__4GKk6vXyLGQzm816XR5b0n?width=1688&height=717&cropmode=none" />
+                  </center>
+              </div>
+
+          </div>
+          <div id="Q_code_1_2" class="container tab-pane fade"><br>
+              <img width="94.5%"
+                  src="https://bnz07pap001files.storage.live.com/y4mxRPrcGHZs1HGpUd26pYRKXt6aHpYSA9a-jBcOIFTZBT9-bh4dBiViJFzGc6j6TjQ99lZ3LqsCTPVoXMUegoE9360Gtr0tTTFphTwsuOER6sz2aRRnwHvurKyki2oNgpC6JF8vW_Vl-4E9v9iNENWvJPpyCBlcWj5n9Jt4lrZ__4GKk6vXyLGQzm816XR5b0n?width=1688&height=717&cropmode=none" />
+          </div>
+
+          <div id="Q_code_1_3" class="container tab-pane fade"><br>
+              <div class="pizaset">.</div>
+              <iframe style="margin-bottom:-65px; margin-top: -21px;"
+                  src="https://paiza.io/projects/e/T6rYIj5n3ErdRm0uQmkD7w?theme=tomorrow_night_blue"
+                  width="100%" height="605" scrolling="no" seamless="seamless"></iframe>
+          </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+  <div id="doubt_1" class="container tab-pane fade"><br> <!-- change href -->
+      <div
+          style="background: rgb(238, 238, 238); padding: 5px -10px; overflow: hidden;">
+          <iframe src="https://form.jotform.com/231327447900049"
+              style="min-width: 100%;height:645px;border:none;margin-left:0px;margin-bottom:0px;margin-top:-36px;margin-bottom:-54px;"
+              width="100%" scrolling="yes"></iframe>
+      </div>
+  </div>
+
+
+
+</div>
+<!-- Tab panes end -->
+</div>
+
+</div>
+<!-- ..................................................................................................................................................................   -->
+</div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
